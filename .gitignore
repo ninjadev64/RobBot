@@ -1,0 +1,10 @@
+.config/
+venv/
+__pycache__/
+
+.replit
+replit.nix
+.breakpoints
+poetry.lock
+
+tokens.env
