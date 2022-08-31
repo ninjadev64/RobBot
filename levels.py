@@ -19,7 +19,6 @@ class Levels(commands.Cog):
 		
 		embed = discord.Embed(color = discord.Colour.green())
 		embed.add_field(name = "Name", value = level.name)
-		embed.add_field(name = "Description", value = level.description)
 		embed.add_field(name = "Downloads", value = level.downloads)
 		embed.add_field(name = "Rating", value = level.rating)
 		embed.add_field(
@@ -28,5 +27,5 @@ class Levels(commands.Cog):
 		)
 		embed.add_field(name = "Coins", value = level.coins)
 		embed.add_field(name = "Creator", value = level.creator.name)
-		embed.add_field(name = "Song", value = f"[{level.song.name}]({level.song.link})")
+		embed.add_field(name = "Song ID", value = level.song.id)
 		await ctx.response.send_message(embed = embed)

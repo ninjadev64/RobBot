@@ -3,6 +3,7 @@ from discord.ext.commands import Bot as dBot
 
 from levels import Levels
 from users import Users
+from songs import Songs
 
 from os import environ, system
 from dotenv import load_dotenv
@@ -16,6 +17,7 @@ class Bot(dBot):
 	async def setup_hook(self):
 		await self.add_cog(Levels(self, client))
 		await self.add_cog(Users(self, client))
+		await self.add_cog(Songs(self, client))
 		await self.tree.sync()
 		self.remove_command("help")
 
