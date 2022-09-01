@@ -7,6 +7,7 @@ from songs import Songs
 
 from os import environ, system
 from dotenv import load_dotenv
+from keep_alive import keep_alive
 
 load_dotenv(dotenv_path = "tokens.env")
 
@@ -33,6 +34,7 @@ async def on_ready():
 		url = "https://www.youtube.com/watch?v=xvFZjo5PgG0"
 	))
 
-# Run the bot
+keep_alive()
+
 try: bot.run(environ["TOKEN"]) 
 except discord.errors.HTTPException: system("kill 1")
