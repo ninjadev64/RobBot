@@ -1,6 +1,6 @@
 from flask import Flask
 from threading import Thread
-app = Flask("RobBot GD")
+app = Flask("RobBot")
 
 @app.route("/")
 def home():

@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "RobBot GD"
+name = "RobBot"
 version = "0.1.0"
 description = ""
 authors = ["ninjadev64", "Blazeing"]
